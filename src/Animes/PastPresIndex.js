@@ -12,7 +12,7 @@ const PastPresIndex = (props) => {
     const [pastPresToUpdate, setPastPresToUpdate] = useState({});
 
     const fetchPastPres = () => {
-        fetch('http://localhost:3000/pastpres', {
+        fetch('https://jtb-theanimelist.herokuapp.com/pastpres', {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const PastPresEdit = (props) => {
     const pastPresUpdate = (event, pastpres) => {
         event.preventDefault();
         const id = props.pastPresToUpdate.id;
-        fetch(`http://localhost:3000/pastpres/${id}`, {
+        fetch(`https://jtb-theanimelist.herokuapp.com/pastpres/${id}`, {
             method: 'PUT',
             body: JSON.stringify({nameOfAnime: editNameOfAnime, lastEpisodeSeen: editLastEpisodeSeen, rating1To10: editRating1To10, favoriteEpEpsFight: editFavoriteEpEpsFight, favoriteCharacter: editFavoriteCharacter}),
             headers: new Headers({

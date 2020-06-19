@@ -10,7 +10,7 @@ const PastPresCreate = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:3000/pastpres', {
+        fetch('https://jtb-theanimelist.herokuapp.com/pastpres', {
             method: 'POST',
             body: JSON.stringify({nameOfAnime: nameOfAnime, lastEpisodeSeen: lastEpisodeSeen, rating1To10: rating1To10, favoriteEpEpsFight: favoriteEpEpsFight, favoriteCharacter: favoriteCharacter}),
             headers: new Headers({

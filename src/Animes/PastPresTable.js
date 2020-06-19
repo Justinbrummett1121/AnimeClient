@@ -4,7 +4,7 @@ import {Table, Button} from 'reactstrap';
 const PastPresTable = (props) => {
 
     const deletePastpres = (pastpres) => {
-        fetch(`http://localhost:3000/pastpres/${pastpres.id}`, {
+        fetch(`https://jtb-theanimelist.herokuapp.com/pastpres/${pastpres.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',

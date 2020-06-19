@@ -7,7 +7,7 @@ const Login = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3000/api/user/login', {
+        fetch('https://jtb-theanimelist.herokuapp.com/api/user/login', {
             method: 'POST',
             body: JSON.stringify({username: username, passwordhash: passwordhash}),
             headers: new Headers({
